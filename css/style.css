@@ -44,14 +44,38 @@ ul {
     display: block;
     padding: 0 30px;
     opacity: 1;
+    position: fixed;
+    left: 270px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.3s ease;
+}
+
+.section.back-section {
+    z-index: 1;
+}
+
+.section.active {
+    z-index: 2;
+    opacity: 1;
+    animation: slideSection 1s ease;
+}
+
+@keyframes slideSection {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
 }
 
 .hidden {
     display: none !important;
-}
-
-.main-content {
-    padding-left: 270px;
 }
 
 .padd-15 {
@@ -126,7 +150,7 @@ ul {
 }
 
 .btn:hover {
-    transform: scale(1.05);
+    transform: scale(1.07);
 }
 
 .shadow-dark {
@@ -147,6 +171,7 @@ ul {
     justify-content: center;
     align-items: center;
     z-index: 10;
+    transition: all 0.3s ease;
 }
 
 .aside .logo {
@@ -180,6 +205,10 @@ ul {
     left: 0;
     bottom: 0;
 }
+.aside .logo:hover {
+    transform: rotate(360deg);
+    transition: all 0.3s ease;
+}
 
 .aside .logo a::after {
     content: '';
@@ -205,6 +234,7 @@ ul {
     display: none;
     align-items: center;
     justify-content: center;
+    transition: alll 0.3s ease;
 }
 
 .aside .nav-toggler span {
@@ -213,6 +243,10 @@ ul {
     background: var(--skin-color);
     display: inline-block;
     position: relative;
+}
+
+.aside .nav-toggler.open span {
+    background-color: transparent;
 }
 
 .aside .nav-toggler span::before {
@@ -225,6 +259,11 @@ ul {
     left: 0;
 }
 
+.aside .nav-toggler.open span::before{
+    transform: rotate(45deg);
+    top: 0;
+}
+
 .aside .nav-toggler span::after {
     content: '';
     height: 2px;
@@ -233,6 +272,11 @@ ul {
     position: absolute;
     top: 6px;
     left: 0;
+}
+
+.aside .nav-toggler.open span::after{
+    transform: rotate(-45deg);
+    top: 0;
 }
 
 .aside .nav {
@@ -336,6 +380,31 @@ h3.my-profession {
 
 }
 
+.home .home-info .btn span{
+    position: relative;
+    width: 1.2rem;
+    visibility: hidden;
+}
+
+.home .home-info .btn span::after{
+    content: '\21D3';
+    font-size: 1.5rem;
+    position: absolute;
+    padding-left: 15px;
+    animation: down 1s linear infinite;
+}
+
+@keyframes down {
+    from{
+        top: -35px;
+        opacity: 0;
+    }
+    to{
+        top: 10px;
+        opacity: 1;
+    }
+}
+
 /* About */
 .about .about-content {
     flex: 0 0 100%;
@@ -394,8 +463,7 @@ h3.my-profession {
     margin-top: 30px;
 }
 
-.about .about-content .personal-info .buttons btn {
-    margin-right: 15px;
+.about .about-content .personal-info .buttons .btn {
     margin-top: 10px;
 }
 
@@ -566,7 +634,8 @@ h3.my-profession {
 }
 
 .service .service-item .service-item-inner .icon .fa,
-.service .service-item .service-item-inner .icon .fa-brands {
+.service .service-item .service-item-inner .icon .fa-brands,
+.service .service-item .service-item-inner .icon .fa-duotone {
     font-size: 40px;
     line-height: 60px;
     color: var(--skin-color);
@@ -621,19 +690,19 @@ h3.my-profession {
 
 .portfolio .portfolio-item-inner {
     border: 6px solid var(--bg-black-100);
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
     cursor: pointer;
 }
 
 .portfolio .portfolio-item-inner .portfolio-img img {
     width: 100%;
-    height: 25vh;
+    height: 30vh;
     display: block;
 }
 
 .portfolio .portfolio-item-inner:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
     transition: all 0.3s ease;
 }
 
@@ -728,12 +797,32 @@ h3.my-profession {
 }
 
 @media (max-width: 1199px) {
+    .section .container{
+        padding-top: 70px;
+    }
     .aside {
         left: -270px;
     }
 
-    .main-content {
-        padding-left: 0;
+    .aside.open {
+        left: 0;
+    }
+
+    .aside .nav-toggler {
+        display: flex;
+        left: 30px;
+    }
+
+    .aside .nav-toggler.open {
+        left: 300px;
+    }
+
+    .section {
+        left: 0;
+    }
+
+    .section.open {
+        left: 270px;
     }
 
     .about .about-content .personal-info .info-item p span {

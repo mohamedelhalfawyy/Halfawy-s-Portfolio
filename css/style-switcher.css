@@ -56,7 +56,8 @@
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    border: 1px solid navajowhite;
+    border: 1px solid #393939;
+    cursor: pointer;
 }
 .style-switcher .color-1{
     background: #ec1839;

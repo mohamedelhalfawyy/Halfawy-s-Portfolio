@@ -105,6 +105,7 @@ ul {
     color: var(--text-black-900);
     font-weight: 700;
     position: relative;
+    font-family: 'Calibri', sans-serif;
 }
 
 .section-title h2::before {
@@ -323,6 +324,8 @@ ul {
 h3.hello {
     font-size: 28px;
     margin: 15px 0;
+    font-family: 'Calibri',sans-serif;
+    font-style: italic;
 }
 
 h3.hello span {
@@ -339,12 +342,14 @@ h3.my-profession {
 
 .typing {
     color: var(--skin-color);
+    font-family: 'Calibri', sans-serif;
 }
 
 .home-info p {
     margin-bottom: 70px;
     font-size: 20px;
     color: var(--text-black-700);
+    font-family: 'Calibri', sans-serif;
 }
 
 .home .home-img {
@@ -411,6 +416,7 @@ h3.my-profession {
 .about .about-content .about-text h3 {
     font-size: 24px;
     margin-bottom: 15px;
+    font-family: 'Calibri', sans-serif;
     font-weight: 700;
     color: var(--text-black-900);
 }
@@ -420,7 +426,8 @@ h3.my-profession {
 }
 
 .about .about-content .about-text p {
-    font-size: 16px;
+    font-size: 18px;
+    font-family: 'Calibri', sans-serif;
     line-height: 25px;
     color: var(--text-black-700);
 }
@@ -440,12 +447,14 @@ h3.my-profession {
     font-weight: 600;
     padding: 10px 0;
     font-size: 16px;
+    font-family: 'Calibri', sans-serif;
     border-bottom: 1px solid var(--bg-black-50);
     color: var(--text-black-700);
 }
 
 .about .about-content .personal-info .info-item p span {
     font-weight: 400;
+    font-family: 'Calibri', sans-serif;
     color: var(--text-black-700);
     margin-left: 4px;
     display: inline-block;
@@ -455,7 +464,9 @@ h3.my-profession {
     margin-top: 30px;
 }
 
-.about .about-content .personal-info .buttons a {
+.about .about-content .personal-info .buttons a
+{
+    font-family: 'Calibri', sans-serif;
     position: relative;
     display: inline-block;
     padding: 15px 30px;
@@ -556,8 +567,9 @@ h3.my-profession {
 
 .about .about-content .skills .skill-item h5 {
     line-height: 40px;
-    font-weight: 600;
-    font-size: 16px;
+    font-weight: 300;
+    font-size: 18px;
+    font-family: 'Calibri', sans-serif;
     color: var(--text-black-900);
     text-transform: capitalize;
 }
@@ -599,10 +611,11 @@ h3.my-profession {
 }
 
 .about .about-content h3.title {
-    font-size: 24px;
+    font-size: 26px;
     margin-bottom: 30px;
     font-weight: 700;
     color: var(--text-black-900);
+    font-family: 'Calibri', sans-serif;
 }
 
 .about .about-content .timeline-box {
@@ -651,7 +664,7 @@ h3.my-profession {
 
 .about .about-content .timeline .timeline-date {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 12px;
     color: var(--text-black-700);
 }
@@ -662,9 +675,10 @@ h3.my-profession {
 
 .about .about-content .timeline .timeline-title {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 15px;
     text-transform: capitalize;
+    font-family: 'Calibri', sans-serif;
     color: var(--text-black-900);
 }
 
@@ -678,7 +692,8 @@ h3.my-profession {
 
 .about .about-content .timeline .timeline-text {
     line-height: 25px;
-    font-size: 16px;
+    font-size: 18px;
+    font-family: 'Calibri Light', sans-serif;
     text-align: justify;
     color: var(--text-black-700);
 }
@@ -737,17 +752,19 @@ h3.my-profession {
 }
 
 .service .service-item .service-item-inner h4 {
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 15px;
     color: var(--text-black-900);
     font-weight: 700;
     text-transform: capitalize;
+    font-family: 'Calibri', sans-serif;
 }
 
 .service .service-item .service-item-inner p {
-    font-size: 18px;
+    font-size: 19px;
     color: var(--text-black-700);
     line-height: 25px;
+    font-family: 'Calibri Light', sans-serif;
 }
 
 /*   portfolio   */
@@ -764,6 +781,7 @@ h3.my-profession {
 .portfolio .portfolio-heading h2 {
     color: var(--text-black-900);
     font-weight: 500;
+    font-family: 'Calibri', sans-serif;
 }
 
 .portfolio .portfolio-item {
@@ -794,15 +812,17 @@ h3.my-profession {
 .contact-title {
     color: var(--skin-color);
     text-align: center;
-    font-size: 25px;
+    font-size: 27px;
     margin-bottom: 20px;
+    font-family: 'Calibri', sans-serif;
 }
 
 .contact-sub-title {
     color: var(--text-black-900);
     text-align: center;
-    font-size: 15px;
+    font-size: 17px;
     margin-bottom: 60px;
+    font-family: 'Calibri Light', sans-serif;
 }
 
 .contact .contact-info-item {
@@ -835,13 +855,15 @@ h3.my-profession {
     color: var(--text-black-900);
     text-transform: capitalize;
     margin: 15px 0 5px;
+    font-family: 'Calibri', sans-serif;
 }
 
 .contact .contact-info-item p {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 25px;
     color: var(--text-black-700);
     font-weight: 400;
+    font-family: 'Calibri Light', sans-serif;
 }
 
 .contact .contact-form {
@@ -870,9 +892,10 @@ h3.my-profession {
     background: var(--bg-black-100);
     border: 1px solid var(--bg-black-50);
     padding: 10px 25px;
-    font-size: 16px;
+    font-size: 18px;
     color: var(--text-black-700);
     transition: all 0.3s ease;
+    font-family: 'Calibri', sans-serif;
 }
 
 .contact .contact-form .form-item .form-control:focus {
@@ -886,6 +909,22 @@ h3.my-profession {
 .contact .contact-form.btn {
     height: 50px;
     padding: 0 50px;
+}
+.contact .contact-form .form-item button span {
+    position: relative;
+    width: 1.2rem;
+    visibility: hidden;
+}
+
+.contact .contact-form .form-item button span::after{
+    content: '\f1d8';
+    font-size: 1.5rem;
+    position: absolute;
+    padding-left: 15px;
+    animation: up 1s linear infinite;
+    color: white;
+    font-weight: bold;
+    font-family: "Font Awesome 6 Free", sans-serif;
 }
 
 @media (max-width: 1199px) {
@@ -964,6 +1003,18 @@ h3.my-profession {
     }
     to {
         top: 10px;
+        opacity: 1;
+    }
+}
+
+@keyframes up {
+    from {
+        top: 15px;
+        opacity: 0;
+
+    }
+    to {
+        top: -22px;
         opacity: 1;
     }
 }

@@ -82,14 +82,26 @@ function asideSectionTogglerBtn(){
     }
 }
 
-let button = document.querySelector(".home .home-info a");
-button.addEventListener("click", () => {
+let downloadButton = document.querySelector(".home .home-info a");
+downloadButton.addEventListener("click", () => {
     const span = document.querySelector(".home .home-info a span");
-    button.style.padding = '12px 50px';
+    downloadButton.style.padding = '12px 50px';
     span.style.visibility = "visible";
     setTimeout(() => {
         span.style.visibility = "hidden";
-        button.style.transition = ".3s ease-in-out";
-        button.style.padding = "12px 35px";
+        downloadButton.style.transition = ".3s ease-in-out";
+        downloadButton.style.padding = "12px 35px";
+    }, 3000);
+})
+
+let sendButton = document.querySelector(".contact .contact-form .form-item button");
+sendButton.addEventListener("click", () => {
+    const span = document.querySelector(".contact .contact-form .form-item button span");
+    sendButton.style.padding = '12px 50px';
+    span.style.visibility = "visible";
+    setTimeout(() => {
+        span.style.visibility = "hidden";
+        sendButton.style.transition = ".3s ease-in-out";
+        sendButton.style.padding = "12px 35px";
     }, 3000);
 })

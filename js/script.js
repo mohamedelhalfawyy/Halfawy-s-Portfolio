@@ -17,7 +17,7 @@ for (let i = 0; i < totalNavList; i++) {
     a.addEventListener("click", function () {
         removeBackSection();
         for (let j = 0; j < totalNavList; j++) {
-            if(navList[j].querySelector("a").classList.contains("active")){
+            if (navList[j].querySelector("a").classList.contains("active")) {
                 addBackSection(j);
                 //allSection[j].classList.add("back-section");
             }
@@ -25,41 +25,41 @@ for (let i = 0; i < totalNavList; i++) {
         }
         this.classList.add("active")
         showSection(this);
-        if(window.innerWidth < 1200){
+        if (window.innerWidth < 1200) {
             asideSectionTogglerBtn();
         }
     })
 }
 
-function showSection(element){
-    for(let i=0; i<totalSection; i++){
+function showSection(element) {
+    for (let i = 0; i < totalSection; i++) {
         allSection[i].classList.remove("active");
     }
     const target = element.getAttribute("href").split("#")[1];
     document.querySelector("#" + target).classList.add("active")
 }
 
-function removeBackSection(){
-    for(let i=0; i<totalSection; i++){
+function removeBackSection() {
+    for (let i = 0; i < totalSection; i++) {
         allSection[i].classList.remove("back-section");
     }
 }
 
-function addBackSection(num){
+function addBackSection(num) {
     allSection[num].classList.add("back-section");
 }
 
-function updateNav(element){
-    for (let i=0; i<totalNavList; i++){
+function updateNav(element) {
+    for (let i = 0; i < totalNavList; i++) {
         navList[i].querySelector("a").classList.remove("active");
         const target = element.getAttribute("href").split("#")[1];
-        if(target === navList[i].querySelector("a").getAttribute("href").split("#")[1]){
+        if (target === navList[i].querySelector("a").getAttribute("href").split("#")[1]) {
             navList[i].querySelector("a").classList.add("active");
         }
     }
 }
 
-document.querySelector(".hire-me").addEventListener("click", function (){
+document.querySelector(".hire-me").addEventListener("click", function () {
     const sectionIndex = this.getAttribute("data-section-index");
     showSection(this);
     updateNav(this);
@@ -74,10 +74,10 @@ navTogglerBtn.addEventListener("click", () => {
     asideSectionTogglerBtn();
 })
 
-function asideSectionTogglerBtn(){
+function asideSectionTogglerBtn() {
     aside.classList.toggle("open");
     navTogglerBtn.classList.toggle("open");
-    for (let i=0; i<totalSection; i++){
+    for (let i = 0; i < totalSection; i++) {
         allSection[i].classList.toggle("open");
     }
 }
@@ -94,14 +94,14 @@ downloadButton.addEventListener("click", () => {
     }, 3000);
 })
 
-let sendButton = document.querySelector(".contact .contact-form .form-item button");
-sendButton.addEventListener("click", () => {
-    const span = document.querySelector(".contact .contact-form .form-item button span");
-    sendButton.style.padding = '12px 50px';
-    span.style.visibility = "visible";
+const loader = document.getElementById("preloader");
+const mainContent = document.getElementById("main")
+
+
+window.addEventListener("load", () => {
     setTimeout(() => {
-        span.style.visibility = "hidden";
-        sendButton.style.transition = ".3s ease-in-out";
-        sendButton.style.padding = "12px 35px";
-    }, 3000);
+        loader.style.display = "none";
+        mainContent.classList.remove("hidden");
+        }, 2000)
+
 })

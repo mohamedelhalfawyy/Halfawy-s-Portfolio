@@ -22,8 +22,9 @@
 
 </head>
 <body>
+<div id="preloader"></div>
 <!-- Main Container Start -->
-<div class="main-container">
+<div id="main" class="main-container hidden">
     <!-- ==== Aside Start ==== -->
     <div class="aside">
         <div class="logo">
@@ -583,48 +584,44 @@
                 <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
                 <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
                 <!-- ==== Contact Form ==== -->
-                <div class="row">
-                    <div class="contact-form padd-15">
-                        <div class="row">
-                            <div class="form-item col-6 padd-15">
-                                <div class="form-group">
-                                    <label>
-                                        <input type="text" class="form-control" placeholder="Name">
-                                    </label>
+                <form action="https://formsubmit.co/mohamed.elhalfawyy@gmail.com" method="POST" class="myForm">
+                    <div class="row">
+                        <div class="contact-form padd-15">
+                            <div class="row">
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="Name" placeholder="Full Name" required>
+                                    </div>
+                                </div>
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="Email" placeholder="Email" required>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="form-item col-6 padd-15">
-                                <div class="form-group">
-                                    <label>
-                                        <input type="email" class="form-control" placeholder="Email">
-                                    </label>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="Subject" placeholder="Subject" required>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-item col-12 padd-15">
-                                <div class="form-group">
-                                    <label>
-                                        <input type="text" class="form-control" placeholder="Subject">
-                                    </label>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <textarea name="Message" id="" rows="10" class="form-control"
+                                                                        placeholder="Message" required></textarea>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-item col-12 padd-15">
-                                <div class="form-group">
-                                    <label for=""></label><textarea name="" id="" rows="10" class="form-control"
-                                                                    placeholder="Message"></textarea>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <button type="submit" class="submitBtn" style="cursor: pointer">Send Message <span></span></button>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-item col-12 padd-15">
-                                <button type="submit" class="btn" style="cursor: pointer">Send Message <span></span></button>
                             </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </section>
         <!-- ==== Contact Section End ==== -->

@@ -6,6 +6,7 @@
     --bg-black-50: #e8dfec;
     --text-black-900: #302e4d;
     --text-black-700: #504e70;
+    --shadow-color: rgba(48, 46, 77, 0.15);
 }
 
 body.dark {
@@ -14,6 +15,7 @@ body.dark {
     --bg-black-50: #393939;
     --text-black-900: #ffffff;
     --text-black-700: #e9e9e9;
+    --shadow-color: rgba(255,255,255, 0.3);
 }
 
 body {
@@ -461,7 +463,7 @@ h3.my-profession {
 }
 
 .about .about-content .personal-info .buttons {
-    margin-top: 30px;
+    margin-top: 45px;
 }
 
 .about .about-content .personal-info .buttons a
@@ -719,7 +721,7 @@ h3.my-profession {
 }
 
 .service .service-item .service-item-inner:hover {
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    box-shadow: 0 0 20px var(--shadow-color);
 }
 
 .service .service-item .service-item-inner .icon {
@@ -899,32 +901,67 @@ h3.my-profession {
 }
 
 .contact .contact-form .form-item .form-control:focus {
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    box-shadow: 0 0 20px var(--shadow-color);
 }
 
 .contact .contact-form .form-item textarea.form-control {
     height: 140px;
 }
 
-.contact .contact-form.btn {
-    height: 50px;
-    padding: 0 50px;
-}
-.contact .contact-form .form-item button span {
+.contact .contact-form .submitBtn {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px 35px;
+    color: white;
+    border-radius: 40px;
+    display: inline-block;
+    white-space: nowrap;
     position: relative;
-    width: 1.2rem;
-    visibility: hidden;
+    letter-spacing: 1px;
+    border: 1px solid transparent;
+    outline: none;
+    cursor: pointer;
+    background: var(--bg-black-900);
+    overflow: hidden;
+    transition: 0.8s;
+    font-family: 'Calibri', sans-serif;
 }
 
-.contact .contact-form .form-item button span::after{
-    content: '\f1d8';
-    font-size: 1.5rem;
+.contact .contact-form .submitBtn:last-child{
+    color: var(--skin-color);
+    border-color: var(--skin-color);
+}
+
+.contact .contact-form .submitBtn:before, .contact .contact-form .submitBtn:after{
     position: absolute;
-    padding-left: 15px;
-    animation: up 1s linear infinite;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    filter: blur(30px);
+    opacity: 0.4;
+    transition: 0.8s;
+}
+.contact .contact-form .submitBtn:before{
+    width: 60px;
+    background: yellowgreen;
+    transform: translateX(-130px) skewX(-45deg);
+}
+.contact .contact-form .submitBtn:after{
+    width: 30px;
+    background: yellowgreen;
+    transform: translateX(-130px) skewX(-45deg);
+}
+.contact .contact-form .submitBtn:hover:before,
+.contact .contact-form .submitBtn:hover:after{
+    opacity: 0.6;
+    transform: translateX(320px) skewX(-45deg);
+}
+.contact .contact-form .submitBtn:hover{
     color: white;
-    font-weight: bold;
-    font-family: "Font Awesome 6 Free", sans-serif;
+}
+.contact .contact-form .submitBtn:hover:last-child{
+    background: var(--skin-color);
 }
 
 @media (max-width: 1199px) {
@@ -995,7 +1032,6 @@ h3.my-profession {
     }
 }
 
-
 @keyframes down {
     from {
         top: -35px;
@@ -1007,14 +1043,11 @@ h3.my-profession {
     }
 }
 
-@keyframes up {
-    from {
-        top: 15px;
-        opacity: 0;
-
-    }
-    to {
-        top: -22px;
-        opacity: 1;
-    }
+#preloader{
+    background: #000 url(../images/test.gif) no-repeat center;
+    background-size: 25%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
 }

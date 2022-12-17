@@ -205,10 +205,6 @@ ul {
     left: 0;
     bottom: 0;
 }
-.aside .logo:hover {
-    transform: rotate(360deg);
-    transition: all 0.3s ease;
-}
 
 .aside .logo a::after {
     content: '';
@@ -259,7 +255,7 @@ ul {
     left: 0;
 }
 
-.aside .nav-toggler.open span::before{
+.aside .nav-toggler.open span::before {
     transform: rotate(45deg);
     top: 0;
 }
@@ -274,7 +270,7 @@ ul {
     left: 0;
 }
 
-.aside .nav-toggler.open span::after{
+.aside .nav-toggler.open span::after {
     transform: rotate(-45deg);
     top: 0;
 }
@@ -289,14 +285,21 @@ ul {
 }
 
 .aside .nav li a {
-    font-size: 16px;
-    font-weight: 600;
-    display: block;
-    border-bottom: 1px solid var(--bg-black-50);
     color: var(--text-black-900);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 1px solid var(--bg-black-50);
+    font-size: 20px;
     padding: 5px 15px;
+    position: relative;
+    font-weight: 400;
+    display: block;
 }
 
+.aside .nav li a:hover{
+    color: var(--skin-color);
+    transition: all 0.4s ease;
+}
 .aside .nav li a.active {
     color: var(--skin-color);
 }
@@ -380,29 +383,18 @@ h3.my-profession {
 
 }
 
-.home .home-info .btn span{
+.home .home-info .btn span {
     position: relative;
     width: 1.2rem;
     visibility: hidden;
 }
 
-.home .home-info .btn span::after{
+.home .home-info .btn span::after {
     content: '\21D3';
     font-size: 1.5rem;
     position: absolute;
     padding-left: 15px;
     animation: down 1s linear infinite;
-}
-
-@keyframes down {
-    from{
-        top: -35px;
-        opacity: 0;
-    }
-    to{
-        top: 10px;
-        opacity: 1;
-    }
 }
 
 /* About */
@@ -463,8 +455,92 @@ h3.my-profession {
     margin-top: 30px;
 }
 
+.about .about-content .personal-info .buttons a {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: var(--skin-color);
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    font-size: 22px;
+}
+
+.about .about-content .personal-info .buttons a:hover{
+    color: white;
+    background: var(--skin-color);
+    box-shadow: 0 0 10px var(--skin-color), 0 0 40px var(--skin-color), 0 0 80px var(--skin-color);
+    transition-delay: 1s;
+}
+.about .about-content .personal-info .buttons a span{
+    position: absolute;
+    display: block;
+}
+
+.about .about-content .personal-info .buttons a span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,var(--skin-color));
+}
+
+.about .about-content .personal-info .buttons a:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+
+.about .about-content .personal-info .buttons a span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, var(--skin-color));
+}
+
+.about .about-content .personal-info .buttons a:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}.about .about-content .personal-info .buttons a span:nth-child(2){
+     top: -100%;
+     right: 0;
+     width: 2px;
+     height: 100%;
+     background: linear-gradient(180deg, transparent, var(--skin-color));
+ }
+
+.about .about-content .personal-info .buttons a:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+.about .about-content .personal-info .buttons a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, var(--skin-color));
+}
+
+.about .about-content .personal-info .buttons a:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
 .about .about-content .personal-info .buttons .btn {
     margin-top: 10px;
+}
+
+.about .about-content .personal-info .info-item a:active {
+
+    color: var(--skin-color);
+}
+
+.about .about-content .personal-info .info-item a:visited {
+
+    color: var(--skin-color);
 }
 
 .about .about-content .skills {
@@ -592,6 +668,14 @@ h3.my-profession {
     color: var(--text-black-900);
 }
 
+.about .about-content .timeline .timeline-title a:after {
+    color: var(--skin-color);
+}
+
+.about .about-content .timeline .timeline-title a:visited {
+    color: var(--skin-color);
+}
+
 .about .about-content .timeline .timeline-text {
     line-height: 25px;
     font-size: 16px;
@@ -688,7 +772,7 @@ h3.my-profession {
     margin-bottom: 30px;
 }
 
-.portfolio .portfolio-item-inner {
+.portfolio .portfolio-item-inner .portfolio-img{
     border: 6px solid var(--bg-black-100);
     border-radius: 20px;
     overflow: hidden;
@@ -697,7 +781,7 @@ h3.my-profession {
 
 .portfolio .portfolio-item-inner .portfolio-img img {
     width: 100%;
-    height: 30vh;
+    height: 320px;
     display: block;
 }
 
@@ -732,8 +816,16 @@ h3.my-profession {
     display: inline-block;
 }
 
-.contact .contact-info-item .icon .fa {
+.contact .contact-info-item .icon .fa, .contact .contact-info-item .icon .fa-brands {
     font-size: 25px;
+    color: var(--skin-color);
+}
+
+.contact .contact-info-item p a:after {
+    color: var(--skin-color);
+}
+
+.contact .contact-info-item p a:visited {
     color: var(--skin-color);
 }
 
@@ -797,9 +889,10 @@ h3.my-profession {
 }
 
 @media (max-width: 1199px) {
-    .section .container{
+    .section .container {
         padding-top: 70px;
     }
+
     .aside {
         left: -270px;
     }
@@ -860,5 +953,17 @@ h3.my-profession {
     .about .about-content .personal-info {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+}
+
+
+@keyframes down {
+    from {
+        top: -35px;
+        opacity: 0;
+    }
+    to {
+        top: 10px;
+        opacity: 1;
     }
 }

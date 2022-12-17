@@ -15,7 +15,7 @@ body.dark {
     --bg-black-50: #393939;
     --text-black-900: #ffffff;
     --text-black-700: #e9e9e9;
-    --shadow-color: rgba(255,255,255, 0.3);
+    --shadow-color: rgba(255, 255, 255, 0.3);
 }
 
 body {
@@ -65,15 +65,6 @@ ul {
     z-index: 2;
     opacity: 1;
     animation: slideSection 1s ease;
-}
-
-@keyframes slideSection {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
 }
 
 .hidden {
@@ -299,10 +290,11 @@ ul {
     display: block;
 }
 
-.aside .nav li a:hover{
+.aside .nav li a:hover {
     color: var(--skin-color);
     transition: all 0.4s ease;
 }
+
 .aside .nav li a.active {
     color: var(--skin-color);
 }
@@ -326,7 +318,7 @@ ul {
 h3.hello {
     font-size: 28px;
     margin: 15px 0;
-    font-family: 'Calibri',sans-serif;
+    font-family: 'Calibri', sans-serif;
     font-style: italic;
 }
 
@@ -466,8 +458,7 @@ h3.my-profession {
     margin-top: 45px;
 }
 
-.about .about-content .personal-info .buttons a
-{
+.about .about-content .personal-info .buttons a {
     font-family: 'Calibri', sans-serif;
     position: relative;
     display: inline-block;
@@ -479,31 +470,32 @@ h3.my-profession {
     font-size: 22px;
 }
 
-.about .about-content .personal-info .buttons a:hover{
+.about .about-content .personal-info .buttons a:hover {
     color: white;
     background: var(--skin-color);
     box-shadow: 0 0 10px var(--skin-color), 0 0 40px var(--skin-color), 0 0 80px var(--skin-color);
     transition-delay: 1s;
 }
-.about .about-content .personal-info .buttons a span{
+
+.about .about-content .personal-info .buttons a span {
     position: absolute;
     display: block;
 }
 
-.about .about-content .personal-info .buttons a span:nth-child(1){
+.about .about-content .personal-info .buttons a span:nth-child(1) {
     top: 0;
     left: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, transparent,var(--skin-color));
+    background: linear-gradient(90deg, transparent, var(--skin-color));
 }
 
-.about .about-content .personal-info .buttons a:hover span:nth-child(1){
+.about .about-content .personal-info .buttons a:hover span:nth-child(1) {
     left: 100%;
     transition: 1s;
 }
 
-.about .about-content .personal-info .buttons a span:nth-child(3){
+.about .about-content .personal-info .buttons a span:nth-child(3) {
     bottom: 0;
     right: -100%;
     width: 100%;
@@ -511,24 +503,27 @@ h3.my-profession {
     background: linear-gradient(270deg, transparent, var(--skin-color));
 }
 
-.about .about-content .personal-info .buttons a:hover span:nth-child(3){
+.about .about-content .personal-info .buttons a:hover span:nth-child(3) {
     right: 100%;
     transition: 1s;
     transition-delay: 0.5s;
-}.about .about-content .personal-info .buttons a span:nth-child(2){
-     top: -100%;
-     right: 0;
-     width: 2px;
-     height: 100%;
-     background: linear-gradient(180deg, transparent, var(--skin-color));
- }
+}
 
-.about .about-content .personal-info .buttons a:hover span:nth-child(2){
+.about .about-content .personal-info .buttons a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, var(--skin-color));
+}
+
+.about .about-content .personal-info .buttons a:hover span:nth-child(2) {
     top: 100%;
     transition: 1s;
     transition-delay: 0.25s;
 }
-.about .about-content .personal-info .buttons a span:nth-child(4){
+
+.about .about-content .personal-info .buttons a span:nth-child(4) {
     bottom: -100%;
     left: 0;
     width: 2px;
@@ -536,7 +531,7 @@ h3.my-profession {
     background: linear-gradient(360deg, transparent, var(--skin-color));
 }
 
-.about .about-content .personal-info .buttons a:hover span:nth-child(4){
+.about .about-content .personal-info .buttons a:hover span:nth-child(4) {
     bottom: 100%;
     transition: 1s;
     transition-delay: 0.75s;
@@ -792,7 +787,7 @@ h3.my-profession {
     margin-bottom: 30px;
 }
 
-.portfolio .portfolio-item-inner .portfolio-img{
+.portfolio .portfolio-item-inner .portfolio-img {
     border: 6px solid var(--bg-black-100);
     border-radius: 20px;
     overflow: hidden;
@@ -927,12 +922,12 @@ h3.my-profession {
     font-family: 'Calibri', sans-serif;
 }
 
-.contact .contact-form .submitBtn:last-child{
+.contact .contact-form .submitBtn:last-child {
     color: var(--skin-color);
     border-color: var(--skin-color);
 }
 
-.contact .contact-form .submitBtn:before, .contact .contact-form .submitBtn:after{
+.contact .contact-form .submitBtn:before, .contact .contact-form .submitBtn:after {
     position: absolute;
     content: '';
     left: 0;
@@ -942,25 +937,30 @@ h3.my-profession {
     opacity: 0.4;
     transition: 0.8s;
 }
-.contact .contact-form .submitBtn:before{
+
+.contact .contact-form .submitBtn:before {
     width: 60px;
     background: yellowgreen;
     transform: translateX(-130px) skewX(-45deg);
 }
-.contact .contact-form .submitBtn:after{
+
+.contact .contact-form .submitBtn:after {
     width: 30px;
     background: yellowgreen;
     transform: translateX(-130px) skewX(-45deg);
 }
+
 .contact .contact-form .submitBtn:hover:before,
-.contact .contact-form .submitBtn:hover:after{
+.contact .contact-form .submitBtn:hover:after {
     opacity: 0.6;
     transform: translateX(320px) skewX(-45deg);
 }
-.contact .contact-form .submitBtn:hover{
+
+.contact .contact-form .submitBtn:hover {
     color: white;
 }
-.contact .contact-form .submitBtn:hover:last-child{
+
+.contact .contact-form .submitBtn:hover:last-child {
     background: var(--skin-color);
 }
 
@@ -1043,7 +1043,16 @@ h3.my-profession {
     }
 }
 
-#preloader{
+@keyframes slideSection {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+#preloader {
     background: #000 url(../images/test.gif) no-repeat center;
     background-size: 25%;
     height: 100vh;

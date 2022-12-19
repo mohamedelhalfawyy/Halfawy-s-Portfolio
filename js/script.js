@@ -105,6 +105,8 @@ window.addEventListener("load", () => {
     }, 2400)
 
 })
+
+
 /*   progress bar animation   */
 
 const java_progressBar = document.querySelector(".java-bar span");
@@ -178,4 +180,4 @@ const observer3 = new IntersectionObserver(entries => {
 });
 observer.observe(document.querySelector('.java-bar'));
 observer2.observe(document.querySelector('.sql-bar'));
-observer3.observe(document.querySelector('.docker-bar'));
+observer3.observe(document.querySelector('.firebase-bar'));

@@ -102,7 +102,7 @@ window.addEventListener("load", () => {
     setTimeout(() => {
         loader.style.display = "none";
         mainContent.classList.remove("hidden");
-    }, 2500)
+    }, 2400)
 
 })
 /*   progress bar animation   */

@@ -144,7 +144,7 @@ ul {
 }
 
 .btn:hover {
-    transform: scale(1.07);
+    transform: scale(1.1);
 }
 
 .shadow-dark {
@@ -562,10 +562,152 @@ h3.my-profession {
     max-width: 100%;
 }
 
+.about .about-content .skills .skill-item h5 span {
+    float: right;
+    padding-bottom: 4px;
+    font-family: 'Copperplate Gothic Light', sans-serif;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.bar {
+    height: 6px;
+    background-color: var(--bg-black-50);
+    border-radius: 5px;
+    margin-top: 10px;
+
+}
+
+.bar span {
+    height: 6px;
+    float: left;
+    border-radius: 5px;
+
+}
+
+.java {
+    background: var(--skin-color);
+    width: 90%;
+    animation: java 3s;
+}
+
+.python {
+    background: var(--skin-color);
+    width: 93%;
+    animation: python 3s;
+}
+
+.js {
+    background: var(--skin-color);
+    width: 85%;
+    animation: js 3s;
+}
+
+.react {
+    background: var(--skin-color);
+    width: 76%;
+    animation: react 3s;
+}
+
+.angular {
+    background: var(--skin-color);
+    width: 45%;
+    animation: angular 3s;
+}
+
+.flutter {
+    background: var(--skin-color);
+    width: 94%;
+    animation: flutter 3s;
+}
+
+.html {
+    background: var(--skin-color);
+    width: 90%;
+    animation: html 3s;
+}
+
+.css {
+    background: var(--skin-color);
+    width: 82%;
+    animation: react 3s;
+}
+
+.sql {
+    background: var(--skin-color);
+    width: 92%;
+    animation: sql 3s;
+}
+
+.firebase {
+    background: var(--skin-color);
+    width: 95%;
+    animation: firebase 3s;
+}
+
+.sql-server {
+    background: var(--skin-color);
+    width: 91%;
+    animation: sql-server 3s;
+}
+
+.mongoDB {
+    background: var(--skin-color);
+    width: 88%;
+    animation: mongoDB 3s;
+}
+
+.restAPI {
+    background: var(--skin-color);
+    width: 95%;
+    animation: restAPI 3s;
+}
+
+.graphQL {
+    background: var(--skin-color);
+    width: 78%;
+    animation: graphQL 3s;
+}
+
+.git {
+    background: var(--skin-color);
+    width: 97%;
+    animation: git 3s;
+}
+
+.aws {
+    background: var(--skin-color);
+    width: 68%;
+    animation: aws 3s;
+}
+
+.docker {
+    background: var(--skin-color);
+    width: 64%;
+    animation: docker 3s;
+}
+
+.oop {
+    background: var(--skin-color);
+    width: 86%;
+    animation: oop 3s;
+}
+
+.data {
+    background: var(--skin-color);
+    width: 82%;
+    animation: data 3s;
+}
+
+.about .about-content .skills .skill-item i {
+    color: var(--skin-color);
+    font-size: 35px;
+}
+
 .about .about-content .skills .skill-item h5 {
     line-height: 40px;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Calibri', sans-serif;
     color: var(--text-black-900);
     text-transform: capitalize;
@@ -1052,8 +1194,179 @@ h3.my-profession {
     }
 }
 
+@keyframes angular {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 45%;
+    }
+}
+
+@keyframes flutter {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 94%;
+    }
+}
+
+@keyframes html {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 82%;
+    }
+}
+
+@keyframes sql {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 92%;
+    }
+}
+
+@keyframes firebase {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes sql-server {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 91%;
+    }
+}
+
+@keyframes mongoDB {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 88%;
+    }
+}
+
+@keyframes restAPI {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes graphQL {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 78%;
+    }
+}
+
+@keyframes git {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 97%;
+    }
+}
+
+@keyframes aws {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 68%;
+    }
+}
+
+@keyframes data {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 82%;
+    }
+}
+
+@keyframes docker {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 64%;
+    }
+}
+
+@keyframes oop {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 86%;
+    }
+}
+
+@keyframes java {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes python {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 93%;
+    }
+}
+
+@keyframes js {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes react {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 76%;
+    }
+}
+
 #preloader {
-    background: #000 url(../images/test.gif) no-repeat center;
+    background: #04f6ca url(../images/loading/load.gif) no-repeat center;
     background-size: 25%;
     height: 100vh;
     width: 100%;

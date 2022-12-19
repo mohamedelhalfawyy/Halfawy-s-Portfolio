@@ -474,7 +474,7 @@ h3.my-profession {
     color: white;
     background: var(--skin-color);
     box-shadow: 0 0 10px var(--skin-color), 0 0 40px var(--skin-color), 0 0 80px var(--skin-color);
-    transition-delay: 1s;
+    transition-delay: 0.55s;
 }
 
 .about .about-content .personal-info .buttons a span {
@@ -492,7 +492,7 @@ h3.my-profession {
 
 .about .about-content .personal-info .buttons a:hover span:nth-child(1) {
     left: 100%;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .about .about-content .personal-info .buttons a span:nth-child(3) {
@@ -505,8 +505,8 @@ h3.my-profession {
 
 .about .about-content .personal-info .buttons a:hover span:nth-child(3) {
     right: 100%;
-    transition: 1s;
-    transition-delay: 0.5s;
+    transition: 0.5s;
+    transition-delay: 0.2s;
 }
 
 .about .about-content .personal-info .buttons a span:nth-child(2) {
@@ -519,8 +519,8 @@ h3.my-profession {
 
 .about .about-content .personal-info .buttons a:hover span:nth-child(2) {
     top: 100%;
-    transition: 1s;
-    transition-delay: 0.25s;
+    transition: 0.5s;
+    transition-delay: 0.1s;
 }
 
 .about .about-content .personal-info .buttons a span:nth-child(4) {
@@ -533,8 +533,8 @@ h3.my-profession {
 
 .about .about-content .personal-info .buttons a:hover span:nth-child(4) {
     bottom: 100%;
-    transition: 1s;
-    transition-delay: 0.75s;
+    transition: 0.5s;
+    transition-delay: 0.3s;
 }
 
 .about .about-content .personal-info .buttons .btn {

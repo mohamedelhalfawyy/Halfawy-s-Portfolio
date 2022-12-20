@@ -958,7 +958,7 @@ h3.my-profession {
 }
 
 .portfolio .portfolio-item-inner:hover {
-    transform: scale(1.08);
+    transform: scale(1.07);
     transition: all 0.3s ease;
 }
 

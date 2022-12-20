@@ -4,6 +4,7 @@
     --bg-black-900: #f2f2fc;
     --bg-black-100: #fdf9ff;
     --bg-black-50: #e8dfec;
+    --bg-black-20: #717171;
     --text-black-900: #302e4d;
     --text-black-700: #504e70;
     --shadow-color: rgba(48, 46, 77, 0.15);
@@ -13,6 +14,7 @@ body.dark {
     --bg-black-900: #151515;
     --bg-black-100: #222222;
     --bg-black-50: #393939;
+    --bg-black-20: #393939;
     --text-black-900: #ffffff;
     --text-black-700: #e9e9e9;
     --shadow-color: rgba(255, 255, 255, 0.3);
@@ -462,7 +464,7 @@ h3.my-profession {
     font-family: 'Calibri', sans-serif;
     position: relative;
     color: var(--skin-color);
-    background: var(--bg-black-100);
+    background: var(--bg-black-20);
     text-decoration: none;
     text-transform: capitalize;
     font-size: 1.5em;

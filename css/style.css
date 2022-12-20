@@ -461,81 +461,76 @@ h3.my-profession {
 .about .about-content .personal-info .buttons a {
     font-family: 'Calibri', sans-serif;
     position: relative;
-    display: inline-block;
-    padding: 15px 30px;
     color: var(--skin-color);
+    background: var(--bg-black-100);
     text-decoration: none;
-    overflow: hidden;
-    transition: 0.2s;
-    font-size: 22px;
+    text-transform: capitalize;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    padding: 15px 35px;
+    transition: 0.5s;
 }
 
 .about .about-content .personal-info .buttons a:hover {
-    color: white;
+    letter-spacing: 0.25em;
     background: var(--skin-color);
-    box-shadow: 0 0 10px var(--skin-color), 0 0 40px var(--skin-color), 0 0 80px var(--skin-color);
-    transition-delay: 0.55s;
+    color: var(--skin-color);
+    box-shadow: 0 0 35px var(--skin-color);
 }
 
-.about .about-content .personal-info .buttons a span {
+.about .about-content .personal-info .buttons a::before{
+    content: '';
     position: absolute;
+    inset: 2px;
+    background: var(--bg-black-900);
+}
+
+.about .about-content .personal-info .buttons a span{
+    position: relative;
+    z-index: 1;
+}
+
+.about .about-content .personal-info .buttons a i{
+    position: absolute;
+    inset: 0;
     display: block;
 }
 
-.about .about-content .personal-info .buttons a span:nth-child(1) {
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, var(--skin-color));
-}
-
-.about .about-content .personal-info .buttons a:hover span:nth-child(1) {
-    left: 100%;
+.about .about-content .personal-info .buttons a i::before{
+    content: '';
+    position: absolute;
+    top: -3.5px;
+    left: 80%;
+    width: 15px;
+    height: 10px;
+    border: 2px solid var(--skin-color);
+    background: var(--bg-black-900);
+    transform: translateX(-50%);
     transition: 0.5s;
 }
 
-.about .about-content .personal-info .buttons a span:nth-child(3) {
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, var(--skin-color));
+.about .about-content .personal-info .buttons a:hover i::before{
+    width: 20px;
+    left: 20%;
 }
 
-.about .about-content .personal-info .buttons a:hover span:nth-child(3) {
-    right: 100%;
+.about .about-content .personal-info .buttons a i::after{
+    content: '';
+    position: absolute;
+    bottom: -3.5px;
+    left: 20%;
+    width: 15px;
+    height: 10px;
+    border: 2px solid var(--skin-color);
+    background: var(--bg-black-900);
     transition: 0.5s;
-    transition-delay: 0.2s;
 }
 
-.about .about-content .personal-info .buttons a span:nth-child(2) {
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, var(--skin-color));
+.about .about-content .personal-info .buttons a:hover i::after{
+    width: 20px;
+    left: 80%;
 }
 
-.about .about-content .personal-info .buttons a:hover span:nth-child(2) {
-    top: 100%;
-    transition: 0.5s;
-    transition-delay: 0.1s;
-}
-
-.about .about-content .personal-info .buttons a span:nth-child(4) {
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, var(--skin-color));
-}
-
-.about .about-content .personal-info .buttons a:hover span:nth-child(4) {
-    bottom: 100%;
-    transition: 0.5s;
-    transition-delay: 0.3s;
-}
 
 .about .about-content .personal-info .buttons .btn {
     margin-top: 10px;
@@ -566,8 +561,7 @@ h3.my-profession {
     float: right;
     padding-bottom: 4px;
     font-family: 'Copperplate Gothic Light', sans-serif;
-    font-style: italic;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .bar {
@@ -701,13 +695,13 @@ h3.my-profession {
 
 .about .about-content .skills .skill-item i {
     color: var(--skin-color);
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .about .about-content .skills .skill-item h5 {
     line-height: 40px;
     font-weight: 300;
-    font-size: 21px;
+    font-size: 20px;
     font-family: 'Calibri', sans-serif;
     color: var(--text-black-900);
     text-transform: capitalize;
@@ -1241,15 +1235,15 @@ h3.my-profession {
 
 .box-area li:nth-child(3) {
     left: 85%;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     animation-delay: 7.5s;
 }
 
 .box-area li:nth-child(4) {
     left: 42%;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     animation-delay: 4.5s;
     animation-duration: 15s;
 }
@@ -1270,8 +1264,8 @@ h3.my-profession {
 
 .box-area li:nth-child(7) {
     left: 70%;
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
     animation-delay: 6.75s;
 }
 
@@ -1284,8 +1278,8 @@ h3.my-profession {
 
 .box-area li:nth-child(9) {
     left: 32%;
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
     animation-delay: 2.75s;
 }
 
@@ -1341,15 +1335,15 @@ h3.my-profession {
 
 .box-area-about li:nth-child(3) {
     left: 85%;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     animation-delay: 7.5s;
 }
 
 .box-area-about li:nth-child(4) {
     left: 42%;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     animation-delay: 4.5s;
     animation-duration: 15s;
 }
@@ -1370,8 +1364,8 @@ h3.my-profession {
 
 .box-area-about li:nth-child(7) {
     left: 70%;
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
     animation-delay: 6.75s;
 }
 
@@ -1384,8 +1378,8 @@ h3.my-profession {
 
 .box-area-about li:nth-child(9) {
     left: 32%;
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
     animation-delay: 2.75s;
 }
 

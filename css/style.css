@@ -747,10 +747,21 @@ h3.my-profession {
     animation: python 3s;
 }
 
+.django {
+    background: var(--skin-color);
+    width: 42%;
+    animation: django 3s;
+}
+
 .js {
     background: var(--skin-color);
     width: 85%;
     animation: js 3s;
+}
+.node {
+    background: var(--skin-color);
+    width: 82%;
+    animation: node 3s;
 }
 
 .react {
@@ -1622,6 +1633,14 @@ h3.my-profession {
         width: 93%;
     }
 }
+@keyframes django {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 42%;
+    }
+}
 
 @keyframes js {
     0% {
@@ -1629,6 +1648,14 @@ h3.my-profession {
     }
     100% {
         width: 85%;
+    }
+}
+@keyframes node {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 82%;
     }
 }
 

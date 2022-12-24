@@ -111,7 +111,9 @@ window.addEventListener("load", () => {
 
 const java_progressBar = document.querySelector(".java-bar span");
 const python_progressBar = document.querySelector(".python-bar span");
+const django_progressBar = document.querySelector(".django-bar span");
 const js_progressBar = document.querySelector(".js-bar span");
+const nodejs_progressBar = document.querySelector(".nodejs-bar span");
 const react_progressBar = document.querySelector(".react-bar span");
 const angular_progressBar = document.querySelector(".angular-bar span");
 const flutter_progressBar = document.querySelector(".flutter-bar span");
@@ -139,11 +141,11 @@ const observer = new IntersectionObserver(entries => {
                 react_progressBar.classList.add('react');
                 java_progressBar.classList.add('java');
                 python_progressBar.classList.add('python');
+                django_progressBar.classList.add('django');
                 js_progressBar.classList.add('js');
+                nodejs_progressBar.classList.add('node');
                 angular_progressBar.classList.add('angular');
                 flutter_progressBar.classList.add('flutter');
-                html_progressBar.classList.add('html');
-                css_progressBar.classList.add('css');
             },1000);
 
         }
@@ -155,6 +157,8 @@ const observer2 = new IntersectionObserver(entries => {
         // If the element is visible
         if (entry.isIntersecting) {
             // Add the animation class
+            html_progressBar.classList.add('html');
+            css_progressBar.classList.add('css');
             sql_progressBar.classList.add('sql');
             firebase_progressBar.classList.add('firebase');
             sql_server_progressBar.classList.add('sql-server');
@@ -178,6 +182,6 @@ const observer3 = new IntersectionObserver(entries => {
         }
     });
 });
-observer.observe(document.querySelector('.java-bar'));
+observer.observe(document.querySelector('.css-bar'));
 observer2.observe(document.querySelector('.sql-bar'));
 observer3.observe(document.querySelector('.firebase-bar'));

@@ -182,6 +182,6 @@ const observer3 = new IntersectionObserver(entries => {
         }
     });
 });
-observer.observe(document.querySelector('.css-bar'));
-observer2.observe(document.querySelector('.sql-bar'));
+observer.observe(document.querySelector('.java-bar'));
+observer2.observe(document.querySelector('.css-bar'));
 observer3.observe(document.querySelector('.firebase-bar'));

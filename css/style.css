@@ -385,8 +385,9 @@ h3.my-profession {
 
 .home .home-img img {
     margin: auto;
+    margin-top: 100px;
     border-radius: 5px;
-    height: 400px;
+    height: 350px;
 
 }
 

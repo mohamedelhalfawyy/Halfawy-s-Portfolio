@@ -761,19 +761,19 @@ li {
 
 .java {
     background: var(--skin-color);
-    width: 90%;
+    width: 93%;
     animation: java 3s;
 }
 
 .python {
     background: var(--skin-color);
-    width: 93%;
+    width: 100%;
     animation: python 3s;
 }
 
 .django {
     background: var(--skin-color);
-    width: 42%;
+    width: 90%;
     animation: django 3s;
 }
 
@@ -862,25 +862,25 @@ li {
 
 .aws {
     background: var(--skin-color);
-    width: 68%;
+    width: 87%;
     animation: aws 3s;
 }
 
 .docker {
     background: var(--skin-color);
-    width: 64%;
+    width: 89%;
     animation: docker 3s;
 }
 
 .oop {
     background: var(--skin-color);
-    width: 86%;
+    width: 90%;
     animation: oop 3s;
 }
 
 .data {
     background: var(--skin-color);
-    width: 82%;
+    width: 88%;
     animation: data 3s;
 }
 
